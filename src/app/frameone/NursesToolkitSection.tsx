@@ -1,0 +1,363 @@
+import { Button, Flex, Heading, Box, IconButton, Image, Input } from "@chakra-ui/react";
+import React from "react";
+
+export default function NursesToolkitSection() {
+  return (
+    <>
+      {/* Nurses Toolkit Section */}
+      <Flex 
+        ml={{ md: "16px", base: "0px" }} 
+        gap="12px" 
+        flexDirection="column" 
+        alignItems="flex-start"
+      >
+        <Heading 
+          size="headinglg" 
+          as="h6" 
+          fontSize="16px" 
+          fontWeight={600}
+          color="gray.800"
+        >
+          Nurse’s Toolkit
+        </Heading>
+        <Box 
+          bg="white.a700" 
+          boxShadow="md" 
+          alignSelf="stretch" 
+          p="8px" 
+          borderRadius="6px"
+          border="1px solid"
+          borderColor="gray.200"
+        >
+          <Box 
+            mb="8px" 
+            ml={{ md: "8px", base: "0px" }}
+          >
+            <Flex 
+              flexDirection="column" 
+              alignItems="flex-start"
+            >
+              <Flex 
+                gap="12px" 
+                alignSelf="stretch" 
+                flexDirection="column" 
+                alignItems="flex-end"
+              >
+                <Flex 
+                  alignSelf="stretch" 
+                  flexDirection="column" 
+                  alignItems="flex-start"
+                >
+                  <Button 
+                    size="md" 
+                    color="blue.900" 
+                    fontWeight={700} 
+                    boxShadow="sm" 
+                    minW="100px" 
+                    borderRadius="4px"
+                    fontSize="14px"
+                    px="12px"
+                    py="6px"
+                  >
+                    Clear Triage
+                  </Button>
+                  <Image 
+                    src="images/img_group_60.svg" 
+                    alt="Image" 
+                    h="4px" 
+                    mt="-2px" 
+                    position="relative" 
+                    w="100%" 
+                  />
+                  <Input
+                    size="md"
+                    variant="outline"
+                    colorScheme="gray_400"
+                    placeholder={`Type your initial assessment and general notes here (who called, reason for call, description of symptoms, duration, severity)`}
+                    mt="14px"
+                    fontWeight={500}
+                    alignSelf="stretch"
+                    borderRadius="6px"
+                    border="1px solid"
+                    borderColor="gray.300"
+                    p="8px"
+                    fontSize="14px"
+                  />
+                </Flex>
+                <Heading 
+                  size="headings" 
+                  as="h6" 
+                  color="blue.900" 
+                  mr={{ md: "160px", base: "0px" }} 
+                  fontSize="14px"
+                  fontWeight={500}
+                >
+                  INSTRUCTIONS
+                </Heading>
+              </Flex>
+              <Flex
+                mt="-10px"
+                position="relative"
+                borderColor="gray.400"
+                borderWidth="1px"
+                borderStyle="solid"
+                bg="white.a700"
+                w={{ md: "44%", base: "100%" }}
+                justifyContent="space-between"
+                alignItems="center"
+                gap="24px"
+                borderRadius="4px"
+                p="6px"
+              >
+                <Heading 
+                  size="textmd" 
+                  as="h6" 
+                  color="gray.500_01" 
+                  ml="10px" 
+                  alignSelf="flex-end"
+                  fontSize="14px"
+                >
+                  Search
+                </Heading>
+                <IconButton
+                  size="sm"
+                  colorScheme="indigo_400"
+                  icon={<Image src="images/img_search.svg" h="16px" w="16px" />}
+                  aria-label="1:300-search_two"
+                  w="28px"
+                  borderRadius="4px"
+                />
+              </Flex>
+            </Flex>
+            <Flex 
+              mt="6px" 
+              gap="10px" 
+              alignItems="flex-start" 
+              flexDirection={{ base: "column", sm: "row" }}
+            >
+              <Box
+                alignSelf="center"
+                borderColor="gray.400"
+                borderWidth="1px"
+                borderStyle="solid"
+                w={{ base: "100%", sm: "44%" }}
+                borderRadius="6px"
+                maxH="300px"
+                overflowY="auto"
+                p="4px"
+              >
+                <Box>
+                  <Flex 
+                    justifyContent="center" 
+                    flexWrap="wrap"
+                    py="4px"
+                    _hover={{ bg: "gray.100" }}
+                    borderRadius="4px"
+                  >
+                    <Heading 
+                      as="h6" 
+                      color="white.a700" 
+                      fontSize="14px" 
+                      bg="blue.200" 
+                      w="20px" 
+                      h="20px" 
+                      p="2px"
+                      textAlign="center"
+                      borderRadius="2px"
+                    >
+                      A
+                    </Heading>
+                    <Heading
+                      as="h6"
+                      color="blue_gray.900"
+                      pl="12px"
+                      pr={{ base: "24px", sm: "36px" }}
+                      bg="white.a700"
+                      py="4px"
+                      fontSize="14px"
+                      fontWeight={500}
+                    >
+                      Abdominal Pain - Upper
+                    </Heading>
+                  </Flex>
+                  <Flex 
+                    justifyContent="center" 
+                    flexWrap="wrap"
+                    py="4px"
+                    _hover={{ bg: "gray.100" }}
+                    borderRadius="4px"
+                  >
+                    <Heading 
+                      as="h6" 
+                      color="white.a700" 
+                      fontSize="14px" 
+                      bg="blue.200" 
+                      w="20px" 
+                      h="20px" 
+                      p="2px"
+                      textAlign="center"
+                      borderRadius="2px"
+                    >
+                      A
+                    </Heading>
+                    <Heading
+                      as="h6"
+                      color="blue_gray.900"
+                      bg="white.a700"
+                      justifyContent="center"
+                      display="flex"
+                      alignItems="center"
+                      px="12px"
+                      py="4px"
+                      fontSize="14px"
+                      fontWeight={500}
+                    >
+                      Abdomen Bloating - Swelling
+                    </Heading>
+                  </Flex>
+                  <Flex 
+                    justifyContent="center" 
+                    flexWrap="wrap"
+                    py="4px"
+                    _hover={{ bg: "gray.100" }}
+                    borderRadius="4px"
+                  >
+                    <Heading 
+                      as="h6" 
+                      color="white.a700" 
+                      fontSize="14px" 
+                      bg="green.a200" 
+                      w="20px" 
+                      h="20px" 
+                      p="2px"
+                      textAlign="center"
+                      borderRadius="2px"
+                    >
+                      A
+                    </Heading>
+                    <Heading
+                      as="h6"
+                      color="blue_gray.900"
+                      pl="12px"
+                      pr={{ base: "24px", sm: "36px" }}
+                      bg="white.a700"
+                      py="4px"
+                      fontSize="14px"
+                      fontWeight={500}
+                    >
+                      Diabetic - Male
+                    </Heading>
+                  </Flex>
+                  {/* Reduced repetitive items for brevity; repeat pattern as needed */}
+                </Box>
+              </Box>
+              <Flex
+                gap="8px"
+                flex={1}
+                flexDirection="column"
+                alignItems="center"
+                alignSelf={{ base: "stretch", sm: "auto" }}
+              >
+                <Heading 
+                  size="textxs" 
+                  as="h6" 
+                  color="blue_gray.900" 
+                  fontSize="11px" 
+                  lineHeight="13px"
+                  textAlign="center"
+                >
+                  <>
+                    Select a protocol from the list. You can also type to Search <br />
+                    above protocol by name or symptoms
+                  </>
+                </Heading>
+                <Flex
+                  alignSelf="stretch"
+                  flexDirection="column"
+                  alignItems="flex-start"
+                  mx={{ md: "18px", base: "0px" }}
+                  mt="4px"
+                >
+                  <Heading 
+                    size="textxs" 
+                    as="h6" 
+                    color="blue_gray.900" 
+                    fontSize="11px"
+                    fontWeight={500}
+                  >
+                    1. Select Protocol
+                  </Heading>
+                  <Heading 
+                    size="textxs" 
+                    as="h6" 
+                    color="blue_gray.900" 
+                    fontSize="11px"
+                    fontWeight={500}
+                  >
+                    2. Perform Triage
+                  </Heading>
+                  <Heading 
+                    size="textxs" 
+                    as="h6" 
+                    color="blue_gray.900" 
+                    fontSize="11px"
+                    fontWeight={500}
+                  >
+                    3. Discuss Care Advice
+                  </Heading>
+                </Flex>
+              </Flex>
+            </Flex>
+            <Flex 
+              mt="32px" 
+              mr={{ md: "10px", base: "0px" }} 
+              justifyContent="center"
+              gap="16px"
+            >
+              <Button 
+                bg={'red'} 
+                color={'white'}
+                fontWeight={700} 
+                minW="74px" 
+                borderRadius="4px"
+                fontSize="14px"
+                px="12px"
+                py="6px"
+              >
+                RESET
+              </Button>
+              <Flex 
+                gap="16px" 
+                flex={1} 
+                justifyContent="flex-end"
+              >
+                <Button 
+                  colorScheme="blue_700" 
+                  fontWeight={700} 
+                  minW="74px" 
+                  borderRadius="4px"
+                  fontSize="14px"
+                  px="12px"
+                  py="6px"
+                >
+                  NEXT
+                </Button>
+                <Button 
+                  colorScheme="teal_400_02" 
+                  fontWeight={700} 
+                  minW="74px" 
+                  borderRadius="4px"
+                  fontSize="14px"
+                  px="12px"
+                  py="6px"
+                >
+                  COPY
+                </Button>
+              </Flex>
+            </Flex>
+          </Box>
+        </Box>
+      </Flex>
+    </>
+  );
+}

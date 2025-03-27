@@ -19,6 +19,13 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "@chakra-ui/react": "^2.8.2",
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/icons": "^2.1.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.16.5",
+    "chakra-react-select": "^4.7.6"
   }
 }
